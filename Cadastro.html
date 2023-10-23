@@ -6,7 +6,7 @@
     <title>Página de Cadastro</title>
     <style>
     	body {
-        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucEYkEzy4HpKDaniZsjzxgLER5ttxbAhD1A&usqp=CAU");
+        background-image:url("https://image.lexica.art/full_jpg/a8a8bdbf-7103-47c4-a01d-cd262a84c301");
         background-size: cover;
         background-repeat:no-repeat;
         font-family: Arial, sans-serif;
@@ -16,6 +16,10 @@
     }
 	
     h1 {
+    	background-color: #0077b6;
+        margin: 20px 350px 30px;
+        border-radius: 30px;
+    	padding: 20px;
         text-align: center;
         color: white;
     }
@@ -55,7 +59,7 @@
     }
 
     input[type="submit"] {
-        background: #007BFF;
+        background: #0077b6;
         color: #fff;
         border: 0;
         padding: 10px 20px;
@@ -64,12 +68,12 @@
     }
 
     input[type="submit"]:hover {
-        background: #0056b3;
+        background-color: #0077b6;
     }    </style>
 </head>
 <body>
     <h1>Cadastro de Usuário</h1>
-    <p>Insira as informações de acesso</p>
+    <p>Insira as informações de Cadastro:</p>
     <form action="processar_cadastro.php" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
@@ -95,7 +99,7 @@
 		<br>
         <br>
 		<div class="cadastrar">
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Inscreva-se">
         </div>
     </form>
 </body>
