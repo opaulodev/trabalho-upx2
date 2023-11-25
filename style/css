@@ -1,1 +1,169 @@
+body {
+    background-image: url("https://lh3.googleusercontent.com/7hIlk5f7HAIJ9gde7blXHPiybHBrVSL341vEX2Y9W63CjKonZXUeWi6pnyQOy2bCZmaZFzZPo24ahA_DgJ295wo-NFmGZgRkAIusQ58sTIvEC1_dSA9lCQnGVsS6K7orNTg3nsViB4QWODBO9g-Nrjg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    background-color: #0c37865e;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e6dbdb5b;
+}
+
+.container{
+    font-size: 30px;
+    text-align: left;
+}
+
+.cadastro a {
+    text-align: left;
+    color: white;
+    list-style-type: none;
+    font-size: 20px;
+}
+.container1{
+    text-align: center;
+    padding: 20PX;
+    font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url("https://image.lexica.art/full_jpg/43c9c1b1-2f3e-4967-a99f-13de566124bc");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color:#fff;    
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:#fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color:#fff;
+
+}
+
+.input-box i {
+    position:absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    }
+
+    .remember-forgot label input{
+        accent-color: #fff;
+        margin-right: 3px;
+
+    }
+
+    .remember-forgot a{
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .remember-forgot a:hover{
+        text-decoration: underline;
+    }
+
+    .wrapper .btn{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .wrapper .registro {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+
+    .registro p a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .registro p a:hover{
+        text-decoration: underline;
+    }
+
 
