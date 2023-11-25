@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-image:url('https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/64b5a6b1-fc48-49dd-9715-24b4ac1e09ff/64b5a6b1-85a4-45c7-b39b-24b4ac1e09ff.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 30vh;
+        }
+
+        #monitor {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        #monitor h2 {
+            color: #333;
+        }
+
+        #status-ok {
+            color: green;
+        }
+
+        #status-warning {
+            color: orange;
+        }
+
+        #status-error {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ADAPT ENERGY</h1>
+    </header>
+    <div>
+        <div id="monitor">
+            <h2>Monitoramento</h2>
+        </div>
+    </div>
+
+    <section>
+        <div id="monitor">
+            <h2>Produção</h2>
+            <p>Status: <span id="status-ok">OK</span></p>
+        </div>
+
+        <div id="monitor">
+            <h2>Produção Diária</h2>
+            <p>Status: <span id="status-warning">Aviso</span></p>
+        </div>
+
+        <div id="monitor">
+            <h2>Rendimento Mensal</h2>
+            <p>Status: <span id="status-error">Erro</span></p>
+        </div>
+    </section>
+
+</body>
+</html>
