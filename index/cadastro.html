@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <style>
+    	body {
+        background-image:url("https://image.lexica.art/full_jpg/a8a8bdbf-7103-47c4-a01d-cd262a84c301");
+        background-size: cover;
+        background-repeat:no-repeat;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+	
+    h1 {
+    	background-color: #0077b6;
+        margin: 20px 350px 30px;
+        border-radius: 30px;
+    	padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    p {
+    	text-align: center;
+        color: white;
+        }
+        
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    select {
+        height: 35px;
+    }
+
+    input[type="submit"] {
+        background: #0077b6;
+        color: #fff;
+        border: 0;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0077b6;
+    }    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <p>Insira as informações de Cadastro:</p>
+    <form action="processar_cadastro.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+		<br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+		<br>
+        <label for="confirma_senha">Confirme a Senha:</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" required>
+		<br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+		<br>
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+		<br>
+        <br>
+		<div class="cadastrar">
+            <input type="submit" value="Inscreva-se">
+        </div>
+    </form>
+</body>
+</html>
