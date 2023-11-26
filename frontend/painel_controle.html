@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt Energy</title>
+    <style>
+    	body {
+        background-image:url("https://image.lexica.art/full_jpg/a8a8bdbf-7103-47c4-a01d-cd262a84c301");
+        background-size: cover;
+        background-repeat:no-repeat;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .botao-estilizado {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    .botao-estilizado:hover {
+            background-color: #3d4ddb;
+        }
+
+            
+	
+    h1 {
+    	background-color: #0077b6;
+        margin: 20px 350px 30px;
+        border-radius: 30px;
+    	padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    p {
+    	text-align: center;
+        color: white;
+        }
+        
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    input[type="text"],
+        select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    select {
+        height: 35px;
+    }
+
+    input[type="submit"] {
+        background: #0077b6;
+        color: #fff;
+        border: 0;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0077b6;
+    }
+    #monitor {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 30vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adapt Energy</h1>
+    
+    <form id="cadastroForm">
+        <p>Insira as informações de Cadastro:</p>
+        <label for="placas">Quantidade de placas solar:</label>
+        <input type="text" id="quantidade-placas">
+        <br>
+        <label for="kw">Qual é o KW por placa solar?</label>
+        <input type="text" id="quantidade-kw-por-placa">
+		<br>
+        <label for="media">Qual é a média da irradiação solar da sua região?</label>
+        <input type="text" id="media">
+        <p><a href="http://www.cresesb.cepel.br/index.php?section=sundata" target="_blank"> Descobrir a irradiação solar da sua região</a></p>
+        <button type="button" class="botao-estilizado" onclick="mostrarSegundaTela(); formatarValores();">Cadastrar</button>
+    </form>
+    
+    <div id="segundaTela" style="display: none;">
+        <div>
+            <div id="monitor">
+                <h2>Monitoramento</h2>
+            </div>
+        </div>
+        <section>
+            <div id="monitor">
+                <h2>Produção Diária:</h2>
+                <p id="producao-diaria"> - </p>
+            </div>
+    
+            <div id="monitor">
+                <h2>Produção Mensal:</h2>
+                <p id="producao-mensal"> - </p>
+            </div>
+    
+            <div id="monitor">
+                <h2>Rendimento Diário:</h2>
+                <p id="rendimento-diario"> - </p>
+            </div>
+    
+            <div id="monitor">
+                <h2>Rendimento Mensal:</h2>
+                <p id="rendimento-mensal"> - </p>
+        </section>
+    </div>
+        
+    </form>
+</body>
+<script src="cadastro.js"></script>
+<script src="painel_controle.js"></script>
+</html>
